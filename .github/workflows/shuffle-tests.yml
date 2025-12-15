@@ -9,8 +9,8 @@ on:
         required: true
         default: 'true'
   # Run once a week on sunday
-  schedule:
-    - cron: '0 1 * * 0'
+  #schedule:
+   # - cron: '0 1 * * 0'
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.head_ref || github.run_id }}
